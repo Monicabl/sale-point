@@ -1,0 +1,30 @@
+:root {
+    --left-nav-width: 250px;
+}
+.principal-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    background: whitesmoke;
+}
+
+.left-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #0d6efd;
+    color: white;
+    width: var(--left-nav-width);
+}
+
+.left-nav * {
+    color: white;
+}
+
+.yield-container {
+    padding: 12px;
+    padding-left: calc(12px + var(--left-nav-width));
+    width: 100%;
+}
